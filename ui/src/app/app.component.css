@@ -15,17 +15,21 @@ body{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	height: 40px;;
 }
 .head i{
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #c67605;
 }
 .head span{
-	font-size: 12px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;	
 }
 
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 16px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -54,9 +58,10 @@ body{
 
 /* ------------------ Menu -------------------------------*/
 .menu {
-	background-color:#dadada; /*#FFFAFA*/ /*#0040ff*/
+	background-color:#fffdfd;
 	overflow: hidden;
 	left: 150px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu ul {
@@ -64,7 +69,7 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #dadada; /*/*#0040ff*/
+	background-color: #fffdfd;
 }
 
 .menu li {
@@ -73,30 +78,31 @@ body{
 
 .menu li a, .dropbtn {
 	display: inline-block;
-    color: rgb(3, 3, 3);
+    color:#555;
     text-align: center;
     padding: 14px 0px 16px;
     text-decoration: none;
     padding-right: 30px;
 }
 
-.menu li a:hover, .dropdown:hover .dropbtn {
-	color: #1100fd;
+.menu li a:hover, .dropdown1:hover, .dropdown2:hover, .dropbtn {
+	color: #fee198;
 }
 
-.menu li.dropdown {
+.menu li .dropdown1, .dropdown2 {
 	display: inline-block;
 }
 
-.menu li .icon:hover {
-	color: #fd7302;
+.menu .icon:hover {
+	color: #fee198;
 	background-color: white;
 }
 
 /* ------------------------------------- left menu ---------------------------------------- */
 .menu .menu_left {
-	padding-left:300px;
+	padding-left:450px;
 	float:left;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu .menu-dropdown-content-left {
@@ -128,14 +134,17 @@ body{
 	text-align: left;
 }
 
-.menu .dropdown:hover .menu-dropdown-content-left {
+.menu .dropdown1:hover .menu-dropdown-content-left {
 	display: block;
 }
 
 /* ------------------------------------- right menu ---------------------------------------- */
 .menu .menu_right {
-	padding-right:50px;
+	padding-right:30px;
 	float:right;
+}
+.menu .menu_right a{
+	padding: 0px;
 }
 
 .menu .menu_right form{
@@ -151,12 +160,12 @@ body{
     box-sizing: border-box;
     border-radius: 25px;
     border: 4px solid white;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .menu .menu_right input{
     position: absolute;
-    width: 95%;
+    width: 100%;
     height: 25px;
     outline: 0;
     border: 0;
@@ -166,9 +175,11 @@ body{
 	padding: 0px;
 	margin-top: 0px;
 	padding-left: 5px;
+	background-color: #d8d6d6;
 }
 
-.menu .menu_right .fa{
+/*input search*/
+.menu .menu_right .fa{  
     box-sizing: border-box;
     padding: 2px;
     width: 25px;
@@ -177,16 +188,16 @@ body{
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: #07051a;
+    color: #ffffff;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
-	background: white;
+	background: rgb(173, 171, 171);
 	padding-left: 4px;
 }
 
 .menu .menu_right form:hover{
-    width: 200px;
+    width: 170px;
     cursor: pointer;
 }
 
@@ -195,10 +206,26 @@ body{
 }
 
 .menu .menu_right form:hover .fa{
-    color: #171a1b;
+    color: #ffffff;
+}
+/* ---------------- language -----------------------*/
+.menu .menu_right .fas{
+	box-sizing: border-box;
+	top: 0;
+	right: 0;
+	color: #ffffff; /*fee198*/
+	background-color: #010394; /*171a1b*/
+	text-align: center;
+	font-size: 1.5em;
+	margin-top:11px;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+.menu .menu_right .fas:hover{
+	color: #fee198;
 }
 
-.menu .menu_right .fab{
+.menu .menu_right .fab{ 
 	box-sizing: border-box;
 	top: 0;
 	right: 0;
@@ -215,20 +242,20 @@ body{
 	color: #fee198;
 }
 
-.menu .menu_right .fas{
+/* change color for skype */
+.menu .menu_right .fac{
 	box-sizing: border-box;
 	top: 0;
 	right: 0;
-	color: #ffffff; /*fee198*/
-	background-color: #010394; /*171a1b*/
+	color: #947901;
+	background-color: #fcfcfc;
 	text-align: center;
 	font-size: 1.5em;
 	margin-top: 11px;
 	border-radius: 50%;
 	margin-left: 5px;
 }
-
-.menu .menu_right .fas:hover{
+.menu .menu_right .fac:hover{
 	color: #fee198;
 }
 
@@ -249,23 +276,25 @@ body{
 	display: block;
 	text-align: center;
 	font-size: 13px;
+	margin-bottom: 10px;
 }
+
 
 .menu .menu-dropdown-content-right input {
 	background-color: #171a1b;
 	outline: none;
 	border: none;
-	color: white;
+	color: rgb(255, 255, 255);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: left;
 }
 
-.menu .dropdown:hover .menu-dropdown-content-right {
+.menu .dropdown2:hover .menu-dropdown-content-right {
 	display: block;
 }
-
+/*   ------------------------------------------------------- */
 #cart {
 	padding-top: 8px;
     font-size: 10px;
@@ -296,20 +325,26 @@ body{
 
 
 /* ----------------------------------------- footer -------------------------------------------- */
-footer {
+footer{
 	background-color: #ffffff;
 	position: fixed;
     bottom: 0;
     width: 100%;
 	height: 50px;
 }
-
+footer a{
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: 'arial', Helvetica, sans-serif;
+	font-weight: bold;
+}
+/*
 .foot-menu {
 	background-color: #ffffff;
 	margin-left: 120px;
 	margin-right: 120px;
 	text-align: center;
-	/*border-top: 1px solid #565859; */
+	border-top: 1px solid #565859; 
 }
 
 .foot-menu ul {
@@ -318,7 +353,7 @@ footer {
 	padding: 0;
 	overflow: hidden;
 	background-color: #ffffff;
-	/*margin-top: 25px;*/
+	margin-top: 25px;
 }
 
 .foot-menu li {
@@ -354,6 +389,8 @@ footer {
 	margin-top: 20px;
     color: #565859;
 }
+*/
+
 
 
 

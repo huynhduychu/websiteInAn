@@ -1,0 +1,17 @@
+.noteproduct1, .noteproduct2, .noteproduct3, .noteproduct4, .noteproduct5, .noteproduct6{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    background-color: #fff;
+}
+.timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 45%;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: #e9ecef;
+}

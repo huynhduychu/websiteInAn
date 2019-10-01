@@ -14,22 +14,24 @@
 		</a>			
 	</div>
 </header>
+
 <div class='menu'>
 	<div class='menu_left'>
 		<ul>
 			<li><a routerLink="home">HOME</a></li>
-			<li class="dropdown">
-				<a routerLink="product" class="dropbtn">PRODUCT</a>
-				<div class="menu-dropdown-content-left">
-					<a href="">Product</a>
-					<a href="">Contact</a>
-					<a href="">Send File</a>	
-					<a href="">About Us</a>
-				</div>
-			</li>			
+			<li><a routerLink="aboutus">ABOUT US</a></li>
+			<li class="dropdown1">
+				<a routerLink="product" class="dropbtn">PRODUCT
+					<div class="menu-dropdown-content-left">
+						<a routerLink="aboutus">About Us</a>				
+						<a routerLink="product">Product</a>
+						<a routerLink="contact">Contact</a>
+						<a routerLink="sendfile">Send File</a>						
+					</div>
+				</a>
+			</li>							
 			<li><a routerLink="contact">CONTACT</a></li>
-			<li><a routerLink="sendfile">SEND FILE</a></li>
-			<li><a routerLink="aboutus">ABOUT US</a></li>				
+			<li><a routerLink="sendfile">SEND FILE</a></li>						
 		</ul>	
 	</div>
 	<div class='menu_right'>
@@ -37,36 +39,63 @@
 			<input type="search">
 			<i class="fa fa-search"></i>
 		</form>
-		<ul>
-			<li class="dropdown">
+		<ul>			
+			<li class="dropdown2">
 				<i class="fas fa-globe-asia"></i>
 				<div class="menu-dropdown-content-right">
-					<a href="#">ENG</a>
-					<a href="#">VIE</a>
+					<a routerLink="home">ENG</a>
+					<a routerLink="contact">VIE</a>
 				</div>
+			</li>			
+			<li>
+				<a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
 			</li>
-			<li><i class="fab fa-facebook"></i></li>
+			<li>
+				<a hreff="http://skype" target="_blank"><i class="fab fa-skype"></i> </a>				
+			</li>
+			<!--
 			<li><i class="fas fa-user-circle"></i></li>
 			<li id="cart">
-				<i class="fas fa-shopping-cart"></i>
-				<span class='badge badge-warning' id='lblCartCount'>0</span>
+			<i class="fas fa-shopping-cart"></i>
+			<span class='badge badge-warning' id='lblCartCount'>0</span>
 			</li>
+			-->
 		</ul>
 	</div>
 </div>
-
+<!--
 <footer>
-	<div class="line-CMYK">
-		<div style="display: inline-block; background-color: royalblue; height: 10px; width: 25%"></div>
-		<div style="display: inline-block; background-color: #ff3399; height: 10px; width: 25%"></div>
-		<div style="display: inline-block; background-color: yellow; height: 10px; width: 25%"></div>
-		<div style="display: inline-block; background-color: black; height: 10px; width: 25%"></div>
+	<div class="footer line-CMYK">
+		<div style="display: inline-block; background-color: royalblue; height: 5px; width: 25%"></div>
+		<div style="display: inline-block; background-color: #ff3399; height: 5px; width: 25%"></div>
+		<div style="display: inline-block; background-color: yellow; height: 5px; width: 25%"></div>
+		<div style="display: inline-block; background-color: black; height: 5px; width: 25%"></div>
 	</div>
+	<div>			 		
+		<a class="tuvan">	
+			<span class="goingay">GỌI NGAY ĐỂ ĐƯỢC TƯ VẤN</span>			
+		</a>		
+		<a class="sdtChu">
+			<i class='fa fa-phone' arua-hidden='true'></i>				
+			<span>0766864391 (Mr.Khanh)</span>			
+		</a>
+		<a class="sdtDuy">
+			<i class='fa fa-phone' arua-hidden='true'></i>
+			<span>0782020203(Mr.Duy)</span>
+		</a>
+		<a class="sdtHoTro">
+			<i class='fa fa-phone' arua-hidden='true'></i>
+			<span>0766864391 (Hỗ Trợ)</span>
+		</a>			
+	</div>
+</footer>
+-->
 	<!--
 	<div class="foot-logo">
 		<div id="logo"></div>
 	</div>
 	-->
+	<!--
 	<div class="foot-menu">
 		<ul>
 			<li><a router="home">Home</a></li>
@@ -76,6 +105,5 @@
 		</ul>	
 	</div>
 	<p id="detail">© 2019 In An web. All Rights Reserved.</p>
-</footer>
-
+	-->
 <router-outlet></router-outlet>
