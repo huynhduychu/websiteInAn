@@ -1,0 +1,10 @@
+.footer_home a{
+	margin-left: 40px;
+	margin-right: 40px;
+	font-family: 'arial', Helvetica, sans-serif;
+	font-weight: bold;
+}
+.fa-phone{
+	margin-right: 10px;
+	transform: rotate(90deg);		
+}

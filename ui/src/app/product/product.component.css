@@ -1,7 +1,7 @@
 .noteproduct1, .noteproduct2, .noteproduct3, .noteproduct4, .noteproduct5, .noteproduct6{
     max-width: 400px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
 }
@@ -14,4 +14,9 @@
     margin-left: -1.5px;
     content: '';
     background-color: #e9ecef;
+    height: 1400px;
+}
+
+.timeline::after {
+    content: '';
 }

@@ -5,6 +5,11 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { PrintingpaperComponent } from './printingpaper/printingpaper.component';
+import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PrintingppComponent } from './printingpp/printingpp.component';
+import { PrintingadvertisingComponent } from './printingadvertising/printingadvertising.component';
 
 
 const routes: Routes = [
@@ -12,7 +17,13 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'sendfile', component: SendfileComponent },
-  { path: 'aboutus', component: AboutusComponent }
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'printingpaper', component: PrintingpaperComponent },
+  { path: 'printingdecal', component: PrintingdecalComponent },
+  { path: 'printingpp', component: PrintingppComponent },
+  { path: 'printingadvertising', component: PrintingadvertisingComponent },
+  { path: 'payment', component: PaymentComponent },
+
 ];
 
 @NgModule({

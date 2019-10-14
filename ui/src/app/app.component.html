@@ -1,3 +1,4 @@
+<!-- Header -->
 <header>
 	<div class='head'>			 		
 		<a class='address-head'>
@@ -14,21 +15,26 @@
 		</a>			
 	</div>
 </header>
-
+<!-- Menu -->
 <div class='menu'>
 	<div class='menu_left'>
 		<ul>
 			<li><a routerLink="home">HOME</a></li>
 			<li><a routerLink="aboutus">ABOUT US</a></li>
 			<li class="dropdown1">
-				<a routerLink="product" class="dropbtn">PRODUCT
+				<div>
+					<a routerLink="product" class="dropbtn"> PRODUCT </a>
+				</div>
+				<div>
 					<div class="menu-dropdown-content-left">
-						<a routerLink="aboutus">About Us</a>				
-						<a routerLink="product">Product</a>
-						<a routerLink="contact">Contact</a>
-						<a routerLink="sendfile">Send File</a>						
+						<a routerLink="/printingpaper">In Trên Giấy</a>				
+						<a routerLink="/printingdecal">In Trên Decal</a>
+						<a routerLink="/pringtingpp">In Kỹ Thuật Số (PP)</a>
+						<a routerLink="/printingadvertising">In Trên Vật Phẩm Quảng Cáo</a>
+						<a routerLink="/product">In Trên Vật Phẩm Quà Tặng</a>
+						<a routerLink="/product">In Trên Vật Liệu Mới</a>
 					</div>
-				</a>
+				</div>
 			</li>							
 			<li><a routerLink="contact">CONTACT</a></li>
 			<li><a routerLink="sendfile">SEND FILE</a></li>						
@@ -63,47 +69,65 @@
 		</ul>
 	</div>
 </div>
-<!--
-<footer>
-	<div class="footer line-CMYK">
-		<div style="display: inline-block; background-color: royalblue; height: 5px; width: 25%"></div>
-		<div style="display: inline-block; background-color: #ff3399; height: 5px; width: 25%"></div>
-		<div style="display: inline-block; background-color: yellow; height: 5px; width: 25%"></div>
-		<div style="display: inline-block; background-color: black; height: 5px; width: 25%"></div>
+
+<router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>
+
+<!-- footer -->
+<div class="container">
+	<div class="row"> 
 	</div>
-	<div>			 		
-		<a class="tuvan">	
-			<span class="goingay">GỌI NGAY ĐỂ ĐƯỢC TƯ VẤN</span>			
-		</a>		
-		<a class="sdtChu">
-			<i class='fa fa-phone' arua-hidden='true'></i>				
-			<span>0766864391 (Mr.Khanh)</span>			
-		</a>
-		<a class="sdtDuy">
-			<i class='fa fa-phone' arua-hidden='true'></i>
-			<span>0782020203(Mr.Duy)</span>
-		</a>
-		<a class="sdtHoTro">
-			<i class='fa fa-phone' arua-hidden='true'></i>
-			<span>0766864391 (Hỗ Trợ)</span>
-		</a>			
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
+			<a href="/home">
+				<img class="" src="../../assets/imgs/logo.png" alt="">
+			</a>
+			<a href="https://placeit.net/c/videos/?f_types=video">
+				<video>
+					video neu co 
+					<source src="" type="video/web">
+					<source src="" type="video/mp4">
+				</video>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
+			<a></a>
+			<h3 style="text-align: center">Phương Thức Thanh Toán</h3>
+			<div>
+				<ul>
+					<li>
+						<a>Thanh Toán Trực Tiếp</a>
+					</li>
+					<li>
+						<a routerLink="/payment">Thanh Toán Chuyển Khoản</a>
+					</li>
+				</ul>
+			</div>
+			<div style="padding: auto">
+				<img src="../../assets/imgs/logo1.png">
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
+			<h3 style="text-align: center">Thông Tin Liên Hệ</h3>
+			<div style="padding: 10px;">
+				<h5>Văn Phòng</h5>
+				<div>30 Đường số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
+				<div>Email: <a href="https://mail.google.com" target="_blank">huynhduychu@gmail.com</a></div>
+				<div>Điện Thoại : 0766864391</div>
+			</div>
+			<div style="padding: 10px;">
+				<h5>Xưởng Sản Xuất</h5>
+				<div>30 Đường số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
+				<div>dien thoai xuong</div>
+				<div>host line</div>
+			</div>
+		</div>
 	</div>
-</footer>
--->
-	<!--
-	<div class="foot-logo">
-		<div id="logo"></div>
+</div>
+
+<div class="footer" style="background-color: black; padding: 30px;">
+	<div class="container" style="text-align: center; margin-left: auto; margin-right: auto; color: white;">
+		<div>
+			Copyright © 2019 Sóng Việt. All Rights Reserved.
+		</div>
 	</div>
-	-->
-	<!--
-	<div class="foot-menu">
-		<ul>
-			<li><a router="home">Home</a></li>
-			<li><a router="hotsale">Hot Sale</a></li>
-			<li><a router="help">Help</a></li>
-			<li><a router="aboutus">About</a></li>
-		</ul>	
-	</div>
-	<p id="detail">© 2019 In An web. All Rights Reserved.</p>
-	-->
-<router-outlet></router-outlet>
+</div>

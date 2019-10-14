@@ -9,6 +9,11 @@ import { ContactComponent } from './contact/contact.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductComponent } from './product/product.component';
+import { PrintingpaperComponent } from './printingpaper/printingpaper.component';
+import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
+import { PaymentComponent } from './payment/payment.component';
+import { PrintingppComponent } from './printingpp/printingpp.component';
+import { PrintingadvertisingComponent } from './printingadvertising/printingadvertising.component';
 
 
 @NgModule({
@@ -18,7 +23,12 @@ import { ProductComponent } from './product/product.component';
     ContactComponent,
     SendfileComponent,
     AboutusComponent,
-    ProductComponent
+    ProductComponent,
+    PrintingpaperComponent,
+    PrintingdecalComponent,
+    PaymentComponent,
+    PrintingppComponent,
+    PrintingadvertisingComponent
   ],
   imports: [
     BrowserModule,

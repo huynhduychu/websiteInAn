@@ -1,13 +1,7 @@
 .carousel-control-next{
     z-index: 0;
 }
-.footer_home{
-	background-color: #ffffff;
-	position: relative;
-    bottom: 0;
-    width: 100%;
-	height: 50px;
-}
+
 .footer_home a{
 	margin-left: 40px;
 	margin-right: 40px;
@@ -22,8 +16,19 @@
 .noteproduct1, .noteproduct2, .noteproduct3, .noteproduct4, .noteproduct5, .noteproduct6{
     max-width: 400px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
 }
 
+/*
+.product-hover :hover{
+    opacity: 50%;
+    background-color: bisque;
+    color: blue;
+    position: absolute;
+    transition: all ease .5s;
+    width: 90%;
+    height: 90%;
+}
+*/
