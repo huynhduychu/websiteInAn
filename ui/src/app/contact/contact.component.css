@@ -1,8 +1,7 @@
-.footer_home a{
-	margin-left: 40px;
-	margin-right: 40px;
+.footer-home-contact {
 	font-family: 'arial', Helvetica, sans-serif;
-	font-weight: bold;
+    font-weight: bold;
+    padding: 30px; 
 }
 .fa-phone{
 	margin-right: 10px;

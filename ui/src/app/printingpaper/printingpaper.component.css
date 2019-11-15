@@ -1,0 +1,7 @@
+.noteproduct1, .noteproduct2, .noteproduct3, .noteproduct4, .noteproduct5, .noteproduct6{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
