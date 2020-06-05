@@ -391,7 +391,55 @@ footer a{
 }
 */
 
+@media only screen and (max-width: 500px) {
 
+	/* header */
+	.head{
+		height: 50px;
+	}
+	.address-head{
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+	.email-head, .phone-head{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.head i{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #c67605;
+	}
+	/* header */
+
+	/* Menu */
+	.menu .menu_left {
+		padding-left:5px;
+		float:left;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.menu .menu_left img{
+		margin-left: 35%;		
+	}
+
+
+	.menu ul {
+		margin-left: 20px;
+		font-size: 85%;
+	}
+	.menu li a, .dropbtn {
+		padding: 10px 0px 10px;
+		padding-right: 10px;
+	}
+
+	/* Menu Right */
+	.menu .menu_right {
+		display: none;
+	}
+	/* Menu Right */
+	/* Menu */
+  }
 
 
 
