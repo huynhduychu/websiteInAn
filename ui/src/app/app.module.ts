@@ -9,7 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductComponent } from './product/product.component';
-import { PrintingpaperComponent } from './printingpaper/printingpaper.component';
+import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
 import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PrintingppComponent } from './printingpp/printingpp.component';
@@ -24,7 +24,7 @@ import { PrintingadvertisingComponent } from './printingadvertising/printingadve
     SendfileComponent,
     AboutusComponent,
     ProductComponent,
-    PrintingpaperComponent,
+    PrintingnamecardComponent,
     PrintingdecalComponent,
     PaymentComponent,
     PrintingppComponent,

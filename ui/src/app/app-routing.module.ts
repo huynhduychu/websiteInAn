@@ -5,7 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { PrintingpaperComponent } from './printingpaper/printingpaper.component';
+import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
 import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PrintingppComponent } from './printingpp/printingpp.component';
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'sendfile', component: SendfileComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'printingpaper', component: PrintingpaperComponent },
+  { path: 'printingnamecard', component: PrintingnamecardComponent },
   { path: 'printingdecal', component: PrintingdecalComponent },
   { path: 'printingpp', component: PrintingppComponent },
   { path: 'printingadvertising', component: PrintingadvertisingComponent },

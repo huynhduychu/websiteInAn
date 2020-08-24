@@ -50,3 +50,20 @@
         margin-right: 10px;        	
     }
 }
+
+
+.timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 45%;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: #e9ecef;
+    height: 2000px;
+}
+
+.timeline::after {
+    content: '';
+}
