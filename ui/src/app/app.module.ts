@@ -10,10 +10,13 @@ import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductComponent } from './product/product.component';
 import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
-import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
+import { IntoroiComponent } from './intoroi/intoroi.component';
 import { PaymentComponent } from './payment/payment.component';
-import { PrintingppComponent } from './printingpp/printingpp.component';
-import { PrintingadvertisingComponent } from './printingadvertising/printingadvertising.component';
+import { IncatalogueComponent } from './incatalogue/incatalogue.component';
+import { IntuigiayComponent } from './intuigiay/intuigiay.component';
+import { InbaothuComponent } from './inbaothu/inbaothu.component';
+import { InthetreoComponent } from './inthetreo/inthetreo.component';
+import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
 
 
 @NgModule({
@@ -25,10 +28,13 @@ import { PrintingadvertisingComponent } from './printingadvertising/printingadve
     AboutusComponent,
     ProductComponent,
     PrintingnamecardComponent,
-    PrintingdecalComponent,
+    IntoroiComponent,
     PaymentComponent,
-    PrintingppComponent,
-    PrintingadvertisingComponent
+    IncatalogueComponent,
+    IntuigiayComponent,
+    InbaothuComponent,
+    InthetreoComponent,
+    InbaolixiComponent
   ],
   imports: [
     BrowserModule,

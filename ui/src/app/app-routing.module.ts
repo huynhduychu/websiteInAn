@@ -6,10 +6,15 @@ import { ProductComponent } from './product/product.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
-import { PrintingdecalComponent } from './printingdecal/printingdecal.component';
+import { IntoroiComponent } from './intoroi/intoroi.component';
 import { PaymentComponent } from './payment/payment.component';
-import { PrintingppComponent } from './printingpp/printingpp.component';
-import { PrintingadvertisingComponent } from './printingadvertising/printingadvertising.component';
+import { IncatalogueComponent } from './incatalogue/incatalogue.component';
+import { IntuigiayComponent } from './intuigiay/intuigiay.component';
+import { InbaothuComponent } from './inbaothu/inbaothu.component';
+import { InthetreoComponent } from './inthetreo/inthetreo.component';
+import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
+
+
 
 
 const routes: Routes = [
@@ -19,9 +24,12 @@ const routes: Routes = [
   { path: 'sendfile', component: SendfileComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'printingnamecard', component: PrintingnamecardComponent },
-  { path: 'printingdecal', component: PrintingdecalComponent },
-  { path: 'printingpp', component: PrintingppComponent },
-  { path: 'printingadvertising', component: PrintingadvertisingComponent },
+  { path: 'intoroi', component: IntoroiComponent },
+  { path: 'incatalogue', component: IncatalogueComponent },
+  { path: 'intuigiay', component: IntuigiayComponent },
+  { path: 'inbaothu', component: InbaothuComponent },
+  { path: 'inthetreo', component: InthetreoComponent },
+  { path: 'inbaolixi', component: InbaolixiComponent },
   { path: 'payment', component: PaymentComponent },
 
 ];
