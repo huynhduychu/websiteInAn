@@ -18,6 +18,7 @@ import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
 
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'product', component: ProductComponent },
   { path: 'contact', component: ContactComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'inthetreo', component: InthetreoComponent },
   { path: 'inbaolixi', component: InbaolixiComponent },
   { path: 'payment', component: PaymentComponent },
+  { path: '**', pathMatch: 'full', redirectTo: '/' }
 
 ];
 

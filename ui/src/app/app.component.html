@@ -11,7 +11,7 @@
 		</a>
 		<a class='phone-head'>
 			<i class='fa fa-phone' arua-hidden='true'></i>
-			<span>0909456789</span>
+			<span>0908.776.569</span>
 		</a>			
 	</div>
 </header>
@@ -19,9 +19,10 @@
 <div class='menu'>
 	
 	<div class='menu_left'>
-		<div class="row">			
-			<img src="../assets/imgs/songviet.PNG" style="padding-right: 150px" router-link="/home">
-		
+		<div class="row">	
+			<a href="home" >				
+				<img class="img-responsive" src="../assets/imgs/songviet.jpg" style="padding-right: 150px" router-link="/home">
+			</a>
 		<ul>
 			<li><a routerLink="home">TRANG CHỦ</a></li>
 			<li><a routerLink="aboutus">GIỚI THIỆU</a></li>
@@ -38,9 +39,9 @@
 						<a routerLink="/intuigiay">In Túi Giấy</a>
 						<a routerLink="/inbaothu">In Bao Thư</a>
 						<a routerLink="/inthetreo">In Thẻ Treo</a>
-						<a routerLink="/inbaolixi">In Bao Lì Xì</a>						
-					</div>
-				</div>
+						<a routerLink="/inbaolixi">In Bao Lì Xì</a>											
+					</div>					
+				</div>				
 				
 			</li>							
 			<li><a routerLink="contact">LIÊN HỆ</a></li>
@@ -79,7 +80,7 @@
 </div>
 
 <router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>
-
+<!--<router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>-->
 <!-- footer -->
 <div class="container">
 	<hr class="mt-2 mb-5">
@@ -98,21 +99,20 @@
 			</a>
 		</div>
 		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">	
-			<h3 style="text-align: left">​Đặt hàng trực tiếp tại:</h3>
-			<div>30 đường số 6, P.Bình Hưng Hòa B, Q. Bình Tân</div>
-			<h5 style="text-align: left;">Đặt hàng qua mạng vui lòng liên hệ:</h5>		
-			<div> Mail : huynhduychu@gmail.com</div>	
-			<div>(Thông tin: Số lượng, kích thước, loại giấy, số điện thoại ...)</div>
-			<div>Điện Thoại: 0766864391</div>
-					
-			<h3 style="text-align: left">Phương Thức Thanh Toán</h3> 
+			<h3 class="quydinh" style="text-align: left;">​Đặt hàng trực tiếp tại:</h3>						
+				<div>30 đường số 6, P.Bình Hưng Hòa B, Q. Bình Tân</div>
+				<h5 class="quydinh" style="text-align: left;">Đặt hàng qua mạng vui lòng liên hệ:</h5>	
+				<div>Điện Thoại: 0908.776.569</div>		
+				<div> Email : huynhduychu@gmail.com</div>	
+				<div>(Thông tin: Số lượng, kích thước, loại giấy, số điện thoại ...)</div>							
+			<h3 class="quydinh" style="text-align: left">Thông Tin Thanh Toán</h3> 
 			<div>
 				<ul>
 					<li>
 						<a>Thanh Toán Trực Tiếp Khi Nhận Hàng</a>
 					</li>
 					<li>
-						<a routerLink="/payment">Thanh Toán Chuyển Khoản</a>
+						<a routerLink="/payment" style="color: #7fbd00;">Thanh Toán Chuyển Khoản</a>
 					</li>
 				</ul>
 			</div>						
@@ -121,12 +121,12 @@
 			</div>-->
 		</div>
 		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
-			<h3 style="text-align: center">Thông Tin Liên Hệ</h3>
+			<h3 class="quydinh" style="text-align: center">Thông Tin Liên Hệ</h3>
 			<div style="padding: 10px;">
 				<h5>Văn Phòng</h5>
-				<div>30 Đường số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
+				<div>Địa chỉ: 30 Đường số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
 				<div>Email: <a href="https://mail.google.com" target="_blank">huynhduychu@gmail.com</a></div>
-				<div>Điện Thoại : 0909456789</div>
+				<div>HotLine: 0908.776.569</div>
 			</div>
 			<!-- will back when have company-->
 			<!--

@@ -102,7 +102,7 @@ body{
 .menu .menu_left {
 	padding-left:150px;
 	float:left;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;	
 }
 
 .menu .menu-dropdown-content-left {
@@ -337,6 +337,9 @@ footer a{
 	margin-right: 50px;
 	font-family: 'arial', Helvetica, sans-serif;
 	font-weight: bold;
+}
+.quydinh{
+	color: #fdb514;
 }
 /*
 .foot-menu {
