@@ -1,23 +1,32 @@
 
 .bangbaogia{
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-   td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #fff3cd;
-  }
- 
-  .cauhoi, .quytrinh{
-    text-align: left;
-  }
-  .hinhdangtagtreo{
-    background-color: #ffffff;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-style: solid;
+  text-align: center;
+}
+
+ td, th {
+  border: 2px solid #413e3e;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.cauhoi{
+  text-align: left;
+  background-color: #fefeff;
+  border-color: #d6d8db;
+}
+.quycach{
+  text-align: left;
+}
+
+.quytrinh{
+  text-align: left;
+  background-color: #fefeff;
+  border-color: #d6d8db;
+}

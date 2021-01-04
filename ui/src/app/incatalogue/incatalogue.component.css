@@ -1,20 +1,31 @@
 
 .bangbaogia{
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-   td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #fff3cd;
-  }
- 
-  .cauhoi, .quytrinh{
-    text-align: left;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-style: solid;
+  text-align: center;
+}
+
+ td, th {
+  border: 2px solid #383838;  /* change for all the td, th*/
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.cauhoi{
+  text-align: left;
+  background-color: #feffff;
+  border-color: #383838;
+}
+.quycach{
+  text-align: left;
+}
+
+.quytrinh{
+  text-align: left;
+  background-color: #fefeff;
+}
