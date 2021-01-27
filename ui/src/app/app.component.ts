@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'apop';
+  title = 'Salands';
   onActivate(e, outlet){
-    outlet.scrollTop = 0;
+    outlet.scrollTop = 0;   
   }
 }

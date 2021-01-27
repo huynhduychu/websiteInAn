@@ -86,7 +86,7 @@ body{
 }
 
 .menu li a:hover, .dropdown1:hover, .dropdown2:hover, .dropbtn {
-	color: #fee198;
+	color: #4285F4;
 }
 
 .menu li .dropdown1, .dropdown2 {
@@ -94,7 +94,7 @@ body{
 }
 
 .menu .icon:hover {
-	color: #fee198;
+	color: #4285F4;
 	background-color: white;
 }
 
@@ -214,7 +214,7 @@ body{
 	top: 0;
 	right: 0;
 	color: #ffffff; /*fee198*/
-	background-color: #010394; /*171a1b*/
+	background-color: #4285F4; /*171a1b*/
 	text-align: center;
 	font-size: 1.5em;
 	margin-top:11px;
@@ -229,7 +229,7 @@ body{
 	box-sizing: border-box;
 	top: 0;
 	right: 0;
-	color: #010394;
+	color: #4285F4;
 	background-color: #fcfcfc;
 	text-align: center;
 	font-size: 1.5em;

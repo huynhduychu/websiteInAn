@@ -5,14 +5,15 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
-import { IntoroiComponent } from './intoroi/intoroi.component';
+import { DanhthiepComponent } from './danhthiep/danhthiep.component';
+import { ThetichdiemComponent } from './thetichdiem/thetichdiem.component';
+import { ToroiComponent } from './toroi/toroi.component';
 import { PaymentComponent } from './payment/payment.component';
-import { IncatalogueComponent } from './incatalogue/incatalogue.component';
-import { IntuigiayComponent } from './intuigiay/intuigiay.component';
-import { InbaothuComponent } from './inbaothu/inbaothu.component';
-import { InthetreoComponent } from './inthetreo/inthetreo.component';
-import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { TuigiayComponent } from './tuigiay/tuigiay.component';
+import { BaothuComponent } from './baothu/baothu.component';
+import { ThetreoComponent } from './thetreo/thetreo.component';
+import { BaolixiComponent } from './baolixi/baolixi.component';
 
 
 
@@ -24,20 +25,29 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'sendfile', component: SendfileComponent },
   { path: 'aboutus', component: AboutusComponent },
-  { path: 'printingnamecard', component: PrintingnamecardComponent },
-  { path: 'intoroi', component: IntoroiComponent },
-  { path: 'incatalogue', component: IncatalogueComponent },
-  { path: 'intuigiay', component: IntuigiayComponent },
-  { path: 'inbaothu', component: InbaothuComponent },
-  { path: 'inthetreo', component: InthetreoComponent },
-  { path: 'inbaolixi', component: InbaolixiComponent },
+  { path: 'danhthiep', component: DanhthiepComponent, 
+      children:[ 
+        { path: 'danhthiep', component: DanhthiepComponent } ,
+      ] 
+  },
+  { path: 'thetichdiem', component: ThetichdiemComponent, 
+      children:[ 
+        { path: 'thetichdiem', component: ThetichdiemComponent } ,
+      ] 
+  },
+  { path: 'toroi', component: ToroiComponent },
+  { path: 'catalogue', component: CatalogueComponent },
+  { path: 'tuigiay', component: TuigiayComponent },
+  { path: 'baothu', component: BaothuComponent },
+  { path: 'thetreo', component: ThetreoComponent },
+  { path: 'baolixi', component: BaolixiComponent },
   { path: 'payment', component: PaymentComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

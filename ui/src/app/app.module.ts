@@ -9,14 +9,15 @@ import { ContactComponent } from './contact/contact.component';
 import { SendfileComponent } from './sendfile/sendfile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ProductComponent } from './product/product.component';
-import { PrintingnamecardComponent } from './printingnamecard/printingnamecard.component';
-import { IntoroiComponent } from './intoroi/intoroi.component';
+import { DanhthiepComponent } from './danhthiep/danhthiep.component';
+import { ToroiComponent } from './toroi/toroi.component';
 import { PaymentComponent } from './payment/payment.component';
-import { IncatalogueComponent } from './incatalogue/incatalogue.component';
-import { IntuigiayComponent } from './intuigiay/intuigiay.component';
-import { InbaothuComponent } from './inbaothu/inbaothu.component';
-import { InthetreoComponent } from './inthetreo/inthetreo.component';
-import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { TuigiayComponent } from './tuigiay/tuigiay.component';
+import { BaothuComponent } from './baothu/baothu.component';
+import { ThetreoComponent } from './thetreo/thetreo.component';
+import { BaolixiComponent } from './baolixi/baolixi.component';
+import { ThetichdiemComponent } from './thetichdiem/thetichdiem.component';
 
 
 @NgModule({
@@ -27,14 +28,15 @@ import { InbaolixiComponent } from './inbaolixi/inbaolixi.component';
     SendfileComponent,
     AboutusComponent,
     ProductComponent,
-    PrintingnamecardComponent,
-    IntoroiComponent,
+    DanhthiepComponent,
+    ToroiComponent,
     PaymentComponent,
-    IncatalogueComponent,
-    IntuigiayComponent,
-    InbaothuComponent,
-    InthetreoComponent,
-    InbaolixiComponent
+    CatalogueComponent,
+    TuigiayComponent,
+    BaothuComponent,
+    ThetreoComponent,
+    BaolixiComponent,
+    ThetichdiemComponent
   ],
   imports: [
     BrowserModule,

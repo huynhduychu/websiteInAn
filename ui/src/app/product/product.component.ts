@@ -11,5 +11,9 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  onRightClick() {
+    return false;
+  }
 
 }
