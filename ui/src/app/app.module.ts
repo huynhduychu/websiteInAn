@@ -18,6 +18,7 @@ import { BaothuComponent } from './baothu/baothu.component';
 import { ThetreoComponent } from './thetreo/thetreo.component';
 import { BaolixiComponent } from './baolixi/baolixi.component';
 import { ThetichdiemComponent } from './thetichdiem/thetichdiem.component';
+import {LocationStrategy, Location,  PathLocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -43,7 +44,10 @@ import { ThetichdiemComponent } from './thetichdiem/thetichdiem.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    Location, {provide: LocationStrategy, useClass: PathLocationStrategy}
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

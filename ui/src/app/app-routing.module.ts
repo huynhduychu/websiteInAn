@@ -16,38 +16,39 @@ import { ThetreoComponent } from './thetreo/thetreo.component';
 import { BaolixiComponent } from './baolixi/baolixi.component';
 
 
-
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'product', component: ProductComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'sendfile', component: SendfileComponent },
-  { path: 'aboutus', component: AboutusComponent },
-  { path: 'danhthiep', component: DanhthiepComponent, 
+  { path: 'san-pham', component: ProductComponent },
+  { path: 'lien-he', component: ContactComponent },
+  { path: 'gui-file', component: SendfileComponent },
+  { path: 'gioi-thieu', component: AboutusComponent },
+  { path: 'danh-thiep', component: DanhthiepComponent, 
       children:[ 
-        { path: 'danhthiep', component: DanhthiepComponent } ,
+        { path: 'danh-thiep', component: DanhthiepComponent } ,
       ] 
   },
-  { path: 'thetichdiem', component: ThetichdiemComponent, 
+  { path: 'the-tich-diem', component: ThetichdiemComponent, 
       children:[ 
-        { path: 'thetichdiem', component: ThetichdiemComponent } ,
+        { path: 'the-tich-diem', component: ThetichdiemComponent } ,
       ] 
   },
-  { path: 'toroi', component: ToroiComponent },
+  { path: 'to-roi', component: ToroiComponent },
   { path: 'catalogue', component: CatalogueComponent },
-  { path: 'tuigiay', component: TuigiayComponent },
-  { path: 'baothu', component: BaothuComponent },
-  { path: 'thetreo', component: ThetreoComponent },
-  { path: 'baolixi', component: BaolixiComponent },
-  { path: 'payment', component: PaymentComponent },
+  { path: 'tui-giay', component: TuigiayComponent },
+  { path: 'bao-thu', component: BaothuComponent },
+  { path: 'the-treo', component: ThetreoComponent },
+  { path: 'bao-li-xi', component: BaolixiComponent },
+  { path: 'thanh-toan', component: PaymentComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
+  imports: [
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled', useHash : false})
+  ],
+
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
