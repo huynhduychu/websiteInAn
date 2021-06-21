@@ -31,3 +31,7 @@ tr:nth-child(even) {
   background-color: #fefeff;
   border-color: #d6d8db;
 }
+
+.updateNews{       
+  color: black;
+}

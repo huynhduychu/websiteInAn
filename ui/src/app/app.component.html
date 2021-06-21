@@ -1,4 +1,5 @@
 <!-- Header -->
+
 <header>
 	<div class='head'>			 		
 		<a class='address-head'>
@@ -11,7 +12,7 @@
 		</a>
 		<a class='phone-head'>
 			<i class='fa fa-phone' arua-hidden='true'></i>
-			<span>0908.776.569</span>
+			<span>0908.77.65.69</span>
 		</a>				
 	</div>
 </header>
@@ -21,7 +22,8 @@
 	<div class='menu_left'>
 		<div class="row">	
 			<a routerLink="">							
-				<img  src="../assets/imgs/logo/9.jpg" style="padding-right: 100px" alt="in ấn Song Việt" class="img-responsive" title="Công Ty Thiết Kế & Quảng Cáo Song Việt">
+				<img  src="../assets/imgs/logo/inansongviet-logo-54x54.jpg" alt="In Ấn Song Việt" class="img-responsive" title="Công Ty Thiết Kế & Quảng Cáo Song Việt">
+				<img  src="../assets/imgs/logo/songviet9.jpg" style="padding-right: 100px" alt="In Ấn Song Việt" class="img-responsive" title="Công Ty Thiết Kế & Quảng Cáo Song Việt">
 			</a>
 		<ul>
 			<li><a routerLink="">TRANG CHỦ</a></li>
@@ -45,7 +47,8 @@
 				
 			</li>							
 			<li><a routerLink="lien-he">LIÊN HỆ</a></li>
-			<li><a routerLink="gui-file">GỬI FILE</a></li>						
+			<li><a routerLink="gui-file">GỬI FILE</a></li>	
+			<li><a routerLink="bao-gia">BÁO GIÁ</a></li>						
 		</ul>	
 		</div>
 	</div>
@@ -81,6 +84,9 @@
 
 <router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>
 <!--<router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>-->
+
+
+
 <!-- footer -->
 <div class="container">
 	<hr class="mt-2 mb-5">
@@ -89,7 +95,7 @@
 		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
 			<div>
 				<a routerLink="" title="Trở Về Trang Home">
-					<img class="" src="../assets/imgs/logo/7.png" alt="in ấn Salands">				
+					<img class="" src="../assets/imgs/logo/inansongviet-logo-300x300.jpg" alt="Công Ty Thiết Kế & Quảng Cáo Song Việt">				
 				</a>
 			</div>
 			
@@ -101,13 +107,16 @@
 				</video>
 			</a> -->
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">	
+		<div class="col-md-4 col-sm-4 col-xs-12 col480 block-footer1">	
 			<h3 class="quydinh" style="text-align: left;">​Đặt hàng trực tiếp tại:</h3>						
 				<div>30 đường số 6, P.Bình Hưng Hòa B, Q. Bình Tân</div>
-				<h5 class="quydinh" style="text-align: left;">Đặt hàng qua mạng vui lòng liên hệ:</h5>	
-				<div>Tel/Zalo: 0908.77.65.69</div>		
-				<div> Email : inansongviet@gmail.com</div>	
-				<div>(Thông tin gửi mail: Số Lượng, Kích Thước, Loại Giấy, Số Điện Thoại ...)</div>							
+				<h4 class="quydinh" style="text-align: left;">Đặt hàng qua mạng</h4>	
+				<div class="row" style="margin: 2px;">Tel/Zalo:<div style="margin-left: 20px;">0908.77.65.69</div>	</div>	
+				<div class="row" style="margin-left: 2px;"> Email:<div style="margin-left: 39px;"> inansongviet@gmail.com</div>	</div>
+				<div>(Thông tin gửi mail: Số Lượng, Kích Thước,</div>
+				<div>Loại Giấy, Số Điện Thoại ...)</div>
+				
+				<div>Chat trực tiếp qua fanpage <a href="https://m.me/inansongviet" target="_blank" title="chat với Song Việt"> m.me/InAnSongViet</a>		</div>					
 			<h3 class="quydinh" style="text-align: left">Thông Tin Thanh Toán</h3> 
 			<div>
 				<ul>
@@ -123,31 +132,21 @@
 				<img src="../../assets/imgs/app/2.png">
 			</div>-->
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12 col480 margintb10 block-footer1">
+		<div class="col-md-4 col-sm-4 col-xs-12 col480 block-footer1">
 			<h3 class="quydinh" style="text-align: center">Thông Tin Liên Hệ</h3>
-			<div style="padding: 10px;">
-				<h5>Văn Phòng</h5>
-				<div>Địa chỉ: 30 Đường Số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
-				<div>Tel/Zalo: 0908.77.65.69</div>
-				<div>Web: <a href="https://inansongviet.com" target="_blank">inansongviet.com</a></div>	
-				<div>Email: inansongviet@gmail.com</div>
-				<div>FanPage: <a href="https://facebook.com/inansongviet" target="_blank">facebook.com/inansongviet</a></div>						
-			</div>
-			<br>
-			<br>
-			
-			<button type="button" onclick="scrollToTop()" id="myBtn" title="Go to top">Trở Lại Đầu Trang</button>
-			
-			<!-- will back when have company-->
-			<!--
-			<div style="padding: 10px;">
+			<div>
+				<h5>Văn Phòng Đại Diện</h5>
+				<h6>30 Đường Số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</h6>
+				<div class="row" style="margin-left: 3px;">Tel/Zalo:<div style="margin-left: 20px;">	0908.77.65.69</div></div>
+				<div class="row" style="margin-left: 3px;">Email:<div style="margin-left: 40px;"> inansongviet@gmail.com</div></div>
+				<div class="row" style="margin-left: 3px;">Website:<a href="https://inansongviet.com" target="_blank" style="margin-left: 22px;">	inansongviet.com</a></div>	
+				<br>
 				<h5>Xưởng Sản Xuất</h5>
-				<div>30 Đường số 6, Phường Bình Hưng Hòa B, Quận Bình Tân, TPHCM</div>
-				<div>dien thoai xuong</div>
-				<div>HotLine : 0909456789</div>
+				<h6>280 Lê Sao, Phường Phú Thạnh, Quận Tân Phú, TPHCM</h6>											
 			</div>
-			-->
-			<!---->
+			<br>		
+			
+			<button type="button" onclick="scrollToTop()" id="myBtn" title="Go to top">Trở Lại Đầu Trang</button>						
 		</div>
 	</div>
 </div>

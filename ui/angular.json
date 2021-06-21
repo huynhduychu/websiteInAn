@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "173339dc-e174-4294-9baa-7e34c4b2dc30"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "apop": {
+    "songviet": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,20 +16,22 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apop",
+            "outputPath": "dist/SongViet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/iconLogo.ico",
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"              
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -44,7 +49,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -68,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "apop:build"
+            "browserTarget": "songviet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "apop:build:production"
+              "browserTarget": "songviet:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "apop:build"
+            "browserTarget": "songviet:build"
           }
         },
         "test": {
@@ -90,7 +94,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/iconLogo.ico",
               "src/assets"
             ],
             "styles": [
@@ -117,16 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "apop:serve"
+            "devServerTarget": "songviet:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "apop:serve:production"
+              "devServerTarget": "songviet:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "apop"
+  "defaultProject": "songviet"
 }

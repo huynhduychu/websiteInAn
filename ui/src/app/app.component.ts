@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
+declare var gtag
 
 @Component({
   selector: 'app-root',
@@ -11,12 +14,13 @@ export class AppComponent {
   onActivate(e, outlet){
     outlet.scrollTop = 0;   
   }
-  constructor(public router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        ga('set', 'inansongviet.com', event.urlAfterRedirects);
-        ga('send', 'inansongviet.com');
-      }
+  
+  constructor(router: Router) {
+    const navEndEvent$ = router.events.pipe(
+      filter(e => e instanceof NavigationEnd)
+    );
+    navEndEvent$.subscribe((e: NavigationEnd) => {
+      gtag('config', 'G-000BZ6QX53', {'inansongviet.com':e.urlAfterRedirects});
     });
   }
 }

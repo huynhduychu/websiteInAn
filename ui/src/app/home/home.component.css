@@ -67,3 +67,6 @@
 .timeline::after {
     content: '';
 }
+.updateNews{       
+    color: black;
+}
