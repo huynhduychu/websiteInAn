@@ -38,6 +38,7 @@ import { DanhthiepdapnoiComponent } from './danhthiepdapnoi/danhthiepdapnoi.comp
 import { HopdungmyphamComponent } from './hopdungmypham/hopdungmypham.component';
 import { HopgiayComponent } from './hopgiay/hopgiay.component';
 import { DanhthiepcaocapComponent } from './danhthiepcaocap/danhthiepcaocap.component';
+import { StickerComponent } from './sticker/sticker.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { DanhthiepcaocapComponent } from './danhthiepcaocap/danhthiepcaocap.comp
     HopdungmyphamComponent,
     HopgiayComponent,
     DanhthiepcaocapComponent,
+    StickerComponent,
   ],
   imports: [
     BrowserModule,

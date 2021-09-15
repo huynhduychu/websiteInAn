@@ -32,6 +32,7 @@ import { ThetichdiemclubComponent } from './thetichdiemclub/thetichdiemclub.comp
 import { DanhthiepdapnoiComponent } from './danhthiepdapnoi/danhthiepdapnoi.component';
 import { HopdungmyphamComponent } from './hopdungmypham/hopdungmypham.component';
 import { HopgiayComponent } from './hopgiay/hopgiay.component';
+import { StickerComponent } from './sticker/sticker.component';
 
 
 const routes: Routes = [
@@ -80,6 +81,7 @@ const routes: Routes = [
   { path: 'bao-thu', component: BaothuComponent },
   { path: 'the-treo', component: ThetreoComponent },
   { path: 'bao-li-xi', component: BaolixiComponent },
+  { path: 'sticker', component: StickerComponent },
   { path: 'thanh-toan', component: PaymentComponent },
   { path: '**', pathMatch: 'full', redirectTo: '/' }
 
