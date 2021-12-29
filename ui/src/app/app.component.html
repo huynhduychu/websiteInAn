@@ -1,21 +1,4 @@
-<!-- Header -->
 
-<header>
-	<div class='head'>			 		
-		<a class='address-head'>
-			<i class='fa fa-map-marker' aria-hidden='true'></i> 
-			<span>30 Đường Số 6, Phường Bình Hưng Hòa B, Quận Bình Tân</span>			
-		</a>		
-		<a class='email-head'>
-			<i class='fa fa-envelope' arua-hidden='true'></i>
-			<span>inansongviet@gmail.com</span>			
-		</a>
-		<a class='phone-head'>
-			<i class='fa fa-phone' arua-hidden='true'></i>
-			<span>0908 77 65 69</span>
-		</a>				
-	</div>
-</header>
 <!-- Menu -->
 <div class='menu'>
 	
@@ -38,6 +21,7 @@
 						<a routerLink="the-tich-diem">Thẻ Tích Điểm</a>
 						<a routerLink="to-roi">Tờ Rơi</a>
 						<a routerLink="catalogue">Catalogue</a>
+						<a routerLink="hop-giay">Hộp Giấy</a>
 						<a routerLink="tui-giay">Túi Giấy</a>
 						<a routerLink="bao-thu">Bao Thư</a>
 						<a routerLink="the-treo">Thẻ Treo</a>
@@ -82,6 +66,23 @@
 		</ul>
 	</div>
 </div>
+<!-- address -->
+<header>
+	<div class='head'>			 		
+		<a class='address-head'>
+			<i class='fa fa-map-marker' aria-hidden='true'></i> 
+			<span>30 Đường Số 6, Phường Bình Hưng Hòa B, Quận Bình Tân</span>			
+		</a>		
+		<a class='email-head'>
+			<i class='fa fa-envelope' arua-hidden='true'></i>
+			<span>inansongviet@gmail.com</span>			
+		</a>
+		<a class='phone-head'>
+			<i class='fa fa-phone' arua-hidden='true'></i>
+			<span>0908 77 65 69</span>
+		</a>				
+	</div>
+</header>
 
 <router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>
 <!--<router-outlet (activate)= "onActivate($event, outlet)" #outlet></router-outlet>-->
